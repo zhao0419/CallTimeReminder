@@ -1,0 +1,16 @@
+com.callduration.BootReceiver:
+    static final java.lang.String ACTION
+    private static final java.lang.String TAG
+com.callduration.MainActivity:
+    public android.os.Handler handler
+    private android.view.View view
+    public static final int ABOUT_DIALOG
+com.callduration.R
+com.callduration.R$array
+com.callduration.R$attr
+com.callduration.R$color
+com.callduration.R$drawable
+com.callduration.R$id
+com.callduration.R$layout
+com.callduration.R$string
+com.callduration.R$style

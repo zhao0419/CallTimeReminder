@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+ 
+    <string name="sync_sel_download">提交更改</string>
+
+    <string name="forward_contacts_title">在此处激活业务-></string>
+
+	<string name="switch_on">YES</string>
+	<string name="switch_off">NO</string>
+    <string name="app_name">通话时间提醒</string>
+ 
+    <string name="select_num_title2">在通话多久后开始提示音间隔</string>
+    <string name="select_num_title3">通话提示音间隔</string>
+    <string name="select_num_title4">选择提示音音乐</string>
+    <string name="select_num_title5">你的手机不支持震动，很抱歉您无法使用通话提醒功能</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="about_stable_release">稳定版本下载</string>
+    <string name="about_alpha_release">试验版本下载</string>
+   
+	<string name="menu_about">软件使用说明</string>
+	 <string name="about_download">软件说明</string>
+	<string name="about">通话时间提醒是一款免费软件，本软件可以精确提供接听电话时的时间统计，在发起呼叫时由于Android系统的设计原因
+	只能从发起呼叫那一刻开始计时，为了减少振铃时间的影响，本软件从发起呼叫那一刻延迟5秒开始计时
+\n
+\n请联系 maoliang0129@gmail.com 寻求技术支持以及开发合作
+\n
+\n版本号: ${VERSION}
+</string>
+</resources>

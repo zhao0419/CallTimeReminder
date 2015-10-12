@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<attr name="drawableSelected" format="integer" />
+	<attr name="drawableNormal" format="integer" />
+	<attr name="selectedSrc" format="integer" />
+	<attr name="normalSrc" format="integer" />
+	<attr name="bgSelected" format="integer" />
+	<attr name="bgNormal" format="integer" />
+	<attr name="textColor" format="color" />
+	<attr name="textSize" format="dimension" />
+	<attr name="type" format="integer" />
+</resources>

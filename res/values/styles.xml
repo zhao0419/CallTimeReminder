@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="systemsetting">
+		<item name="android:windowBackground">@color/background</item>
+		<item name="android:windowNoTitle">false</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowTitleSize">24.0dip</item>
+		<item name="android:windowTitleStyle">@style/windowtitlestyle</item>
+		<item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+		<item name="android:textSize">18.0sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#bb000000</item>
+		<item name="android:focusable">false</item>
+		<item name="android:listSelector">#00000000</item>
+		<item name="android:cacheColorHint">#00000000</item>
+	</style>
+	<style name="windowtitlestyle">
+		<item name="android:textSize">14.0sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#ffffffff</item>
+		<item name="android:paddingLeft">10.0dip</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:shadowColor">#bb000000</item>
+		<item name="android:shadowRadius">0.0</item>
+	</style>
+	<style name="WindowTitleBackground">
+		<item name="android:background">@drawable/bg_header</item>
+	</style>
+
+	<style name="CustomWindowTitleBackground">
+		<item name="android:background">#00cc00</item>
+	</style>
+	<style name="CustomWindowTitle">
+		<item name="android:singleLine">true</item>
+		<item name="android:shadowColor">#BB000000</item>
+		<item name="android:shadowRadius">2.75</item>
+	</style>
+
+	<style name="WindowTitle" parent="@android:style/Theme">
+		<item name="android:windowTitleStyle">@style/CustomWindowTitle</item>
+		<item name="android:textAppearance">@style/WindowTitleTextAppearance</item>
+		<item name="android:paddingLeft">10.0dip</item>
+		<item name="android:paddingTop">8.0dip</item>
+		<item name="android:paddingBottom">8.0dip</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:shadowColor">#bb000000</item>
+		<item name="android:shadowRadius">0.0</item>
+	</style>
+	<style name="WindowTitleTextAppearance">
+		<item name="android:textSize">18.0sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textColor">#ffffffff</item>
+	</style>
+	<style name="window_title_background" parent="@android:style/Theme">
+		<item name="android:background">#00000000</item>
+		<item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+	</style>
+	<style name="NoTitleBar" parent="@android:style/Theme">
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowTitleSize">0.0dip</item>
+	</style>
+	<style name="CustomTitle" parent="@android:style/Theme">
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowTitleSize">44.0dip</item>
+		<item name="android:windowTitleStyle">@style/WindowTitle</item>
+		<item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+	</style>
+	<style name="CustomDialogTheme" parent="@android:style/Theme">
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowTitleSize">24.0dip</item>
+		<item name="android:windowTitleStyle">@style/WindowTitle</item>
+		<item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+	</style>
+	<style name="ActivityDialogTheme" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="customTheme" parent="@android:style/Theme">
+		<item name="android:windowTitleSize">0.0dip</item>
+		<item name="android:windowTitleBackgroundStyle">@style/window_title_background</item>
+	</style>
+</resources>

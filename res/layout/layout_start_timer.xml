@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical"
+	android:background="@color/white" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<ScrollView android:id="@id/layout_scroll_main_view"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1.0">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			
+			<LinearLayout android:gravity="center_horizontal"
+				android:layout_gravity="center_horizontal" android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="12.0dip" android:layout_weight="1.0">
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:orientation="vertical"
+					android:background="@drawable/bg_input_repeat"
+					android:layout_margin="6.0dip">
+					<LinearLayout android:orientation="horizontal"
+						android:id="@id/item_sync" android:background="@drawable/btn_view_br"
+						android:clickable="true" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_margin="0.0dip">
+		
+							<EditText android:id="@+id/start_hour" android:textSize="18.0sp" android:textColor="@color/default_text"
+								android:duplicateParentState="true" android:layout_width="50dip"
+								android:layout_height="wrap_content" android:layout_marginLeft="2.0dip"
+								android:layout_marginTop="10.0dip" android:text="0"
+								android:singleLine="true" android:inputType="number" android:maxLength="2"/>
+							<TextView android:textSize="18.0sp" android:textColor="@color/default_text" 
+							    android:id="@+id/hour_tv" android:layout_width="wrap_content"
+							    android:layout_marginLeft="10.0dip"
+								android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="小时"
+						    />
+						    <EditText android:id="@+id/start_min" android:textSize="18.0sp" android:textColor="@color/default_text"
+								android:duplicateParentState="true" android:layout_width="50dip"
+								android:layout_height="wrap_content" android:layout_marginLeft="2.0dip"
+								android:layout_marginTop="10.0dip" android:text="0"
+								android:singleLine="true" android:inputType="number" android:maxLength="2"/>
+							<TextView android:textSize="18.0sp" android:textColor="@color/default_text" 
+							    android:id="@+id/minute_tv" android:layout_width="wrap_content"
+								 android:layout_marginLeft="10.0dip"
+								android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="分"
+						    />
+						    <EditText android:id="@+id/start_sec" android:textSize="18.0sp" android:textColor="@color/default_text"
+								android:duplicateParentState="true" android:layout_width="50dip"
+								android:layout_height="wrap_content" android:layout_marginLeft="2.0dip"
+								android:layout_marginTop="10.0dip" android:text="0"
+								android:singleLine="true" android:inputType="number" android:maxLength="2"/>
+							<TextView android:textSize="18.0sp" android:textColor="@color/default_text" 
+							    android:id="@+id/second_tv" android:layout_width="wrap_content"
+								 android:layout_marginLeft="10.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="秒"
+						    />
+						</LinearLayout>
+					</LinearLayout>
+
+				
+				</LinearLayout>		
+				
+			</LinearLayout>
+
+
+	</ScrollView>
+</LinearLayout>

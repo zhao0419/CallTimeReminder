@@ -1,0 +1,111 @@
+com.callduration.AboutDialog -> com.callduration.m:
+    android.app.Activity activity -> a
+    android.widget.TextView textView -> b
+    android.app.Dialog create() -> a
+com.callduration.BootReceiver -> com.callduration.BootReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.callduration.MainActivity -> com.callduration.MainActivity:
+    android.widget.CheckBox checkbox -> b
+    java.lang.Boolean isChecked -> c
+    java.lang.String TAG -> d
+    android.app.ProgressDialog updatingContactsDialog -> e
+    android.content.SharedPreferences proflieSharedPreference -> a
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    java.lang.String getVersion(android.content.Context) -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    java.lang.String access$0() -> a
+com.callduration.MainActivity$1 -> com.callduration.k:
+    com.callduration.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.callduration.MainActivity$2 -> com.callduration.l:
+    com.callduration.MainActivity this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.callduration.MainActivity$3 -> com.callduration.i:
+    com.callduration.MainActivity this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.callduration.MainActivity$4 -> com.callduration.j:
+    com.callduration.MainActivity this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.callduration.MainActivity$5 -> com.callduration.f:
+    com.callduration.MainActivity this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.callduration.MainActivity$6 -> com.callduration.h:
+    com.callduration.MainActivity this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.callduration.MainActivity$7 -> com.callduration.c:
+    com.callduration.MainActivity this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.callduration.MainActivity$8 -> com.callduration.d:
+    com.callduration.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.callduration.NativeService -> com.callduration.NativeService:
+    boolean isServiceActive -> a
+    long startHour -> b
+    long startMin -> c
+    long startSec -> d
+    long hourInterval -> e
+    long minInterval -> f
+    long secInterval -> g
+    long startTotalTime -> h
+    long intervalTotalTime -> i
+    android.content.SharedPreferences proflieSharedPreference -> l
+    boolean isTaskRunning -> j
+    boolean isVibratorSupported -> m
+    android.os.Vibrator mVibrator -> n
+    java.lang.String TAG -> o
+    android.content.BroadcastReceiver mBroadcastReceiver -> p
+    java.util.Timer intervalTimer -> q
+    android.text.format.Time time -> k
+    com.callduration.NativeService$CallStatus callStatus -> r
+    java.util.TimerTask intervalTimerTask -> s
+    android.os.Handler mHandler -> t
+    java.lang.Runnable r -> u
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    boolean onUnbind(android.content.Intent) -> onUnbind
+    void Virbrate() -> a
+    void onStart(android.content.Intent,int) -> onStart
+    void onDestroy() -> onDestroy
+    void releaseTimer() -> b
+    java.lang.String access$0() -> c
+    java.util.Timer access$1(com.callduration.NativeService) -> a
+    void access$2(com.callduration.NativeService,java.util.Timer) -> a
+    void access$3(com.callduration.NativeService,android.os.Handler) -> a
+    java.util.TimerTask access$4(com.callduration.NativeService) -> b
+    void access$5(com.callduration.NativeService,java.util.TimerTask) -> a
+    com.callduration.NativeService$CallStatus access$6(com.callduration.NativeService) -> c
+    android.os.Handler access$7(com.callduration.NativeService) -> d
+    void access$8(com.callduration.NativeService,java.lang.Runnable) -> a
+    void access$9(com.callduration.NativeService,com.callduration.NativeService$CallStatus) -> a
+    java.lang.Runnable access$10(com.callduration.NativeService) -> e
+com.callduration.NativeService$1 -> com.callduration.n:
+    com.callduration.NativeService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.callduration.NativeService$1$1 -> com.callduration.g:
+    com.callduration.NativeService$1 this$1 -> a
+    void run() -> run
+com.callduration.NativeService$1$2 -> com.callduration.b:
+    com.callduration.NativeService$1 this$1 -> a
+    void run() -> run
+com.callduration.NativeService$1$3 -> com.callduration.e:
+    com.callduration.NativeService$1 this$1 -> a
+    void run() -> run
+com.callduration.NativeService$CallStatus -> com.callduration.a:
+    com.callduration.NativeService$CallStatus IDLE -> a
+    com.callduration.NativeService$CallStatus RINGING -> b
+    com.callduration.NativeService$CallStatus OFFHook -> c
+    com.callduration.NativeService$CallStatus[] ENUM$VALUES -> d
+    com.callduration.NativeService$CallStatus[] values() -> values
+    com.callduration.NativeService$CallStatus valueOf(java.lang.String) -> valueOf

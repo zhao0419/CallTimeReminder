@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="vertical"
+	android:background="@color/white" android:layout_width="fill_parent"
+	android:focusable="true" android:focusableInTouchMode="true"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:orientation="horizontal" android:id="@id/layout_main" 
+		android:background="@drawable/bg_header" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView android:textSize="20.0sp" android:textColor="@color/white"
+			android:gravity="center_vertical" android:id="@id/tab_bar"
+			android:paddingTop="9.0dip" android:paddingBottom="9.0dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="10.0dip" android:text="@string/app_name" />
+		<View android:layout_width="wrap_content" android:layout_height="0.0dip"
+			android:layout_weight="1.0" />
+		<View android:id="@id/rightDivider" android:background="@drawable/bg_btn_line"
+			android:layout_width="2.0dip" android:layout_height="44.0dip" />
+		<ImageButton android:layout_gravity="right" android:id="@id/sync_tab_button"
+			android:background="@android:color/transparent" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:src="@drawable/user_settings" />
+	</LinearLayout>
+	<ScrollView android:id="@id/layout_scroll_main_view"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1.0">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<RelativeLayout android:background="@color/transparent"
+				android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:textSize="18.0sp" android:textColor="#ff383838"
+					android:id="@id/tv_forward_contacts_title" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginLeft="20.0dip"
+					android:layout_marginTop="6.0dip" android:text="@string/forward_contacts_title" />
+				<RelativeLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true">
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:src="@drawable/switch_bg" />
+					<TextView android:textSize="18.0dip" android:textColor="#ffffffff"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="10.0dip" android:text="@string/switch_off"
+						android:layout_centerVertical="true" />
+					<TextView android:textSize="18.0dip" android:textColor="#ffffffff"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_marginLeft="60.0dip" android:text="@string/switch_on"
+						android:shadowColor="#fffff600" android:shadowDx="0.0"
+						android:shadowDy="1.0" android:shadowRadius="5.0"
+						android:layout_centerVertical="true" />
+					<CheckBox android:typeface="monospace" android:id="@id/switch_checkbox"
+						android:background="@drawable/switch_bg_empty" android:focusable="false"
+						android:focusableInTouchMode="false" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:button="@drawable/btn_switch" />
+				</RelativeLayout>
+			</RelativeLayout>
+			<LinearLayout android:gravity="center_horizontal"
+				android:layout_gravity="center_horizontal" android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="48.0dip" android:layout_weight="1.0">
+				<TextView android:textSize="18.0sp" android:textColor="#ff383838"
+					android:id="@id/tv_forward_contacts_title" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6.0dip" android:text="@string/select_num_title2" />
+					
+				<!-- 引入三个layout文件 -->
+				<include android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				layout="@layout/layout_start_timer"/>
+				
+				<TextView android:textSize="18.0sp" android:textColor="#ff383838"
+				android:id="@+id/tv_forward_contacts_title2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6.0dip" android:text="@string/select_num_title3" />
+				
+				<include android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				layout="@layout/layout_interval_timer"/>
+				
+				<TextView android:textSize="18.0sp" android:textColor="#FF0000"
+				android:id="@+id/virbrator_reminder" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:visibility="gone"
+				android:layout_marginTop="6.0dip" android:text="@string/select_num_title5" />
+			
+				
+				
+			</LinearLayout>
+			
+			
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>
